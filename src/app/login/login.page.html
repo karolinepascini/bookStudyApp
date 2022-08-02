@@ -1,0 +1,69 @@
+<ion-header   [translucent]="true">
+  <ion-item color="principal" class="titulo">
+    <ion-thumbnail class="imagem" slot="start">
+      <img src="../../assets/MicrosoftTeams-image.png">
+    </ion-thumbnail>
+    <div>
+      <ion-label class="titulo">Cadastro:</ion-label>
+    </div>
+
+  </ion-item>
+  </ion-header>
+
+<ion-content color="fundo">
+  <ion-grid>
+    <ion-card class="grid">
+      <div class="bs">
+        <p>BOOK' STUDY</p>
+      </div>
+      <div class="cadas">
+        <p >Cadastre-se para compatilhar conteúdos de estudo e criar o seu cronograma.</p>
+      </div>
+        <ion-item color="fundo" class="card">
+          <ion-label position="floating">Email</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+        <ion-row>
+          <ion-col size="6">
+            <ion-item color="fundo" class="col">
+              <ion-label position="floating">Nome</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col size="6">
+            <ion-item color="fundo" class="cold">
+              <ion-label position="floating">Sobrenome</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="6">
+            <ion-item color="fundo" class="col">
+              <ion-label position="floating">Insira senha</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col size="6">
+            <ion-item color="fundo" class="cold">
+              <ion-label position="floating">Confirmar</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-item color="fundo" class="carde">
+          <ion-label position="floating">Telefone</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+        <ion-row>
+          <ion-col size="6" >
+              <ion-button color="principal" routerLink="/cadastro" class="botao" expand="block">Voltar para página de acesso</ion-button>
+          </ion-col>
+          <ion-col size="6">
+              <ion-button color="principal" routerLink="/gerar" class="botao" expand="block">Confirmar cadastro</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-grid>
+
+</ion-content>

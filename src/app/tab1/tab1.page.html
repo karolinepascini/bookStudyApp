@@ -1,17 +1,23 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
+  <ion-item color="principal" class="titulo">
+    <ion-thumbnail class="imagem" slot="start">
+      <img src="../../assets/MicrosoftTeams-image.png" />
+    </ion-thumbnail>
+    <div>
+      <ion-label class="subtitulo">Olá Karol!</ion-label>
+      <ion-label class="subtitulo">Pronta para os estudos?</ion-label>
+    </div>
+  </ion-item>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<ion-content [fullscreen]="true" color="fundo">
+  <ion-item color="fundo">
+    <ion-thumbnail class="thumbnail" slot="start">
+      <img class="esquilo" src="../../assets/esquilolivro.png" />
+    </ion-thumbnail>
+    <div>
+      <ion-label class="subtitulo">Já gerou seu cronograma?</ion-label>
+      <p routerLink="/gerar">Gerar</p>
+    </div>
+  </ion-item>
 </ion-content>

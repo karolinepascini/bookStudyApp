@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-item color="principal" class="titulo">
+    <ion-thumbnail class="imagem" slot="start">
+      <img src="../../assets/MicrosoftTeams-image.png" />
+    </ion-thumbnail>
+    <div>
+      <ion-label class="app">Book'Study </ion-label>
+      <ion-label class="subtitulo">Meu aplicativo de estudos!</ion-label>
+    </div>
+  </ion-item>
+</ion-header>
+
+<ion-content color="fundo" [fullscreen]="true">
+  <ion-grid>
+    <ion-card class="grid">
+      <ion-card-header class="grude">
+        <div routerLink="/login">
+        <img class="bandeira" src="../../assets/bandeira.png" />
+      </div>
+        <ion-input class="les" type="email">Login:</ion-input>
+        <ion-input class="les" type="password">Senha:</ion-input>
+      </ion-card-header>
+      <ion-button routerLink="/tabs/tab1" class="entrar" color="principal">
+        Entrar
+      </ion-button>
+      <p routerLink="/esquecisenha" class="senha">Esqueci minha senha</p>
+    </ion-card>
+  </ion-grid>
+</ion-content>
