@@ -4,7 +4,7 @@
       <img src="../../assets/MicrosoftTeams-image.png">
     </ion-thumbnail>
     <div>
-      <ion-label>gerar</ion-label>
+      <ion-label class="titi">Questionário</ion-label>
     </div>
 
   </ion-item>
@@ -12,8 +12,29 @@
 
 <ion-content color="fundo">
   <ion-grid class="grid">
-    <ion-card>
+          <ion-radio-group value="biff" class="lactea">
+            <ion-list-header  >
+              <ion-label>Em caso de rendimento baixo no conteúdo:</ion-label>
+            </ion-list-header>
 
-    </ion-card>
+            <ion-item color="#d9d9d9" >
+              <ion-label>Repetir conteúdo. </ion-label>
+              <ion-radio  slot="start" value="biff"></ion-radio>
+            </ion-item>
+
+            <ion-item color="#d9d9d9">
+              <ion-label>Não repetir.</ion-label>
+              <ion-radio slot="start" value="griff"></ion-radio>
+            </ion-item>
+          </ion-radio-group>
+
+
+      <ion-range class="lactea" (ionKnobMoveStart)="onIonKnobMoveStart($event)" (ionKnobMoveEnd)="onIonKnobMoveEnd($event)"></ion-range>
+      <div>
+        <ion-label>Horas a estudar por dia: {{ moveStart }}</ion-label>
+      </div>
+      <div>
+        <ion-label>Minutos de descanso entre aulas: {{ moveEnd }}</ion-label>
+      </div>
   </ion-grid>
 </ion-content>

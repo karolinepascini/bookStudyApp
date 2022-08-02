@@ -60,7 +60,7 @@
               <ion-button color="principal" routerLink="/cadastro" class="botao" expand="block">Voltar para página de acesso</ion-button>
           </ion-col>
           <ion-col size="6">
-              <ion-button color="principal" routerLink="/gerar" class="botao" expand="block">Confirmar cadastro</ion-button>
+              <ion-button (click)="presentAlert()" color="principal" routerLink="/gerar" class="botao" expand="block">Confirmar cadastro</ion-button>
           </ion-col>
         </ion-row>
       </ion-card>
