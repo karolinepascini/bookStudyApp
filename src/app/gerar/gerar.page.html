@@ -12,8 +12,18 @@
 
 <ion-content color="fundo">
   <ion-grid class="grid">
-          <ion-radio-group value="biff" class="lactea">
-            <ion-list-header  >
+
+          <ion-item color="#d9d9d9" class="lactea">
+            <ion-label>Periodo de estudos</ion-label>
+            <ion-select placeholder="Selecionar" okText="Periodo de estudos" cancelText="Cancel Choice">
+              <ion-select-option value="apples">Manhã</ion-select-option>
+              <ion-select-option value="oranges">Tarde</ion-select-option>
+              <ion-select-option value="bananas">Noite</ion-select-option>
+            </ion-select>
+          </ion-item>
+
+          <ion-radio-group value="biff">
+            <ion-list-header class="lactea" >
               <ion-label>Em caso de rendimento baixo no conteúdo:</ion-label>
             </ion-list-header>
 
@@ -29,12 +39,20 @@
           </ion-radio-group>
 
 
-      <ion-range class="lactea" (ionKnobMoveStart)="onIonKnobMoveStart($event)" (ionKnobMoveEnd)="onIonKnobMoveEnd($event)"></ion-range>
+      <ion-range class="via" (ionKnobMoveStart)="onIonKnobMoveStart($event)" (ionKnobMoveEnd)="onIonKnobMoveEnd($event)"></ion-range>
       <div>
-        <ion-label>Horas a estudar por dia: {{ moveStart }}</ion-label>
+        <ion-label class="via" >Horas a estudar por dia: {{ moveStart }}</ion-label>
       </div>
       <div>
-        <ion-label>Minutos de descanso entre aulas: {{ moveEnd }}</ion-label>
+        <ion-label class="via">Minutos de descanso entre aulas: {{ moveEnd }}</ion-label>
       </div>
+
+      <ion-item color="d9d9d9" class="lactea">
+          <ion-label>Ativar Notificações do App</ion-label>
+          <ion-toggle></ion-toggle>
+        </ion-item>
+
+        <ion-button color="principal" routerLink="/cadastro" class="botao" expand="block"> Confirmar questionário.</ion-button>
+
   </ion-grid>
 </ion-content>
