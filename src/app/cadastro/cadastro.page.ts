@@ -1,3 +1,4 @@
+import { AlertController } from '@ionic/angular';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,8 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastroPage implements OnInit {
 
-  constructor() { }
+  constructor(private alertController: AlertController) {}
 
+  async presentAlert() {
+    const alert = await this.alertController.create({
+      header: 'Pronto(a) para os estudos?',
+      message: '<img src="../../assets/esquilolivro.png">',
+      buttons: ['Vamos lá'],
+    });
+
+    await alert.present();
+  }
   ngOnInit() {
   }
 

@@ -20,9 +20,9 @@
         <ion-input class="les" type="email">Login:</ion-input>
         <ion-input class="les" type="password">Senha:</ion-input>
       </ion-card-header>
-      <ion-button routerLink="/tabs/tab1" class="entrar" color="principal">
-        Entrar
-      </ion-button>
+
+
+      <ion-button (click)="presentAlert()" routerLink="/tabs/tab1" class="entrar" color="principal">Entrar</ion-button>
       <p routerLink="/esquecisenha" class="senha">Esqueci minha senha</p>
     </ion-card>
   </ion-grid>

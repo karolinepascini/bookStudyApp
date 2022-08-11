@@ -34,6 +34,54 @@ const routes: Routes = [
     loadChildren: () =>
       import('./login/login.module').then((m) => m.LoginPageModule),
   },
+  {
+    path: 'bio',
+    loadChildren: () => import('./bio/bio.module').then( m => m.BioPageModule)
+  },
+  {
+    path: 'esp',
+    loadChildren: () => import('./esp/esp.module').then( m => m.EspPageModule)
+  },
+  {
+    path: 'filo',
+    loadChildren: () => import('./filo/filo.module').then( m => m.FiloPageModule)
+  },
+  {
+    path: 'fis',
+    loadChildren: () => import('./fis/fis.module').then( m => m.FisPageModule)
+  },
+  {
+    path: 'geo',
+    loadChildren: () => import('./geo/geo.module').then( m => m.GeoPageModule)
+  },
+  {
+    path: 'his',
+    loadChildren: () => import('./his/his.module').then( m => m.HisPageModule)
+  },
+  {
+    path: 'ing',
+    loadChildren: () => import('./ing/ing.module').then( m => m.IngPageModule)
+  },
+  {
+    path: 'port',
+    loadChildren: () => import('./port/port.module').then( m => m.PortPageModule)
+  },
+  {
+    path: 'mat',
+    loadChildren: () => import('./mat/mat.module').then( m => m.MatPageModule)
+  },
+  {
+    path: 'quim',
+    loadChildren: () => import('./quim/quim.module').then( m => m.QuimPageModule)
+  },
+  {
+    path: 'red',
+    loadChildren: () => import('./red/red.module').then( m => m.RedPageModule)
+  },
+  {
+    path: 'socio',
+    loadChildren: () => import('./socio/socio.module').then( m => m.SocioPageModule)
+  },
 ];
 @NgModule({
   imports: [
