@@ -98,6 +98,30 @@
 	--ion-color-fundo-contrast-rgb: 0,0,0;
 	--ion-color-fundo-shade: #bfbfbf;
 	--ion-color-fundo-tint: #dddddd;
+
+  //**facil**//
+  --ion-color-facil: #cb6a6a;
+	--ion-color-facil-rgb: 203,106,106;
+	--ion-color-facil-contrast: #000000;
+	--ion-color-facil-contrast-rgb: 0,0,0;
+	--ion-color-facil-shade: #b35d5d;
+	--ion-color-facil-tint: #d07979;
+
+  //**medio**//
+  --ion-color-medio: #c62d45;
+	--ion-color-medio-rgb: 198,45,69;
+	--ion-color-medio-contrast: #ffffff;
+	--ion-color-medio-contrast-rgb: 255,255,255;
+	--ion-color-medio-shade: #ae283d;
+	--ion-color-medio-tint: #cc4258;
+
+  //**dificil**/
+  --ion-color-dificil: #96293a;
+	--ion-color-dificil-rgb: 150,41,58;
+	--ion-color-dificil-contrast: #ffffff;
+	--ion-color-dificil-contrast-rgb: 255,255,255;
+	--ion-color-dificil-shade: #842433;
+	--ion-color-dificil-tint: #a13e4e;
 }
 
 .ion-color-principal {
@@ -125,4 +149,28 @@
 	--ion-color-contrast-rgb: var(--ion-color-fundo-contrast-rgb);
 	--ion-color-shade: var(--ion-color-fundo-shade);
 	--ion-color-tint: var(--ion-color-fundo-tint);
+}
+.ion-color-facil {
+	--ion-color-base: var(--ion-color-facil);
+	--ion-color-base-rgb: var(--ion-color-facil-rgb);
+	--ion-color-contrast: var(--ion-color-facil-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-facil-contrast-rgb);
+	--ion-color-shade: var(--ion-color-facil-shade);
+	--ion-color-tint: var(--ion-color-facil-tint);
+}
+.ion-color-medio {
+	--ion-color-base: var(--ion-color-medio);
+	--ion-color-base-rgb: var(--ion-color-medio-rgb);
+	--ion-color-contrast: var(--ion-color-medio-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-medio-contrast-rgb);
+	--ion-color-shade: var(--ion-color-medio-shade);
+	--ion-color-tint: var(--ion-color-medio-tint);
+}
+.ion-color-dificil {
+	--ion-color-base: var(--ion-color-dificil);
+	--ion-color-base-rgb: var(--ion-color-dificil-rgb);
+	--ion-color-contrast: var(--ion-color-dificil-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-dificil-contrast-rgb);
+	--ion-color-shade: var(--ion-color-dificil-shade);
+	--ion-color-tint: var(--ion-color-dificil-tint);
 }

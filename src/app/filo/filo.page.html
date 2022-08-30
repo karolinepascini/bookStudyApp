@@ -1,9 +1,48 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>filo</ion-title>
+  <ion-toolbar color="principal" class="toto">
+    <ion-title class="title">Filosofia</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content color="fundo">
+  <ion-card class="prim" color="facil">
+    <ion-card-header >
+      <ion-card-title class="titu">Introdução á filosofia</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+  <ion-card  color="facil">
+    <ion-card-header >
+      <ion-card-title class="titu">Pré Socráticos</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card  color="medio">
+    <ion-card-header >
+      <ion-card-title class="titu">Criacionismo</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+  <ion-card  color="medio">
+    <ion-card-header >
+      <ion-card-title class="titu">Mitos</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card  color="dificil">
+    <ion-card-header >
+      <ion-card-title class="titu">Teoria do Conhecimento</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+  <ion-card  color="dificil">
+    <ion-card-header >
+      <ion-card-title class="titu">Jean-Jacques Rousseau</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+  <!-- fab/ botão voltar -->
+  <ion-fab vertical="bottom" horizontal="left" slot="fixed" routerLink="/tab1">
+    <ion-fab-button color="principal" >
+      <ion-icon color="subcor" name="arrow-back-circle"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 
 </ion-content>
