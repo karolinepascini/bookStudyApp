@@ -82,6 +82,26 @@ const routes: Routes = [
     path: 'socio',
     loadChildren: () => import('./socio/socio.module').then( m => m.SocioPageModule)
   },
+  {
+    path: 'imuno',
+    loadChildren: () => import('./matbio/imuno/imuno.module').then( m => m.ImunoPageModule)
+  },
+  {
+    path: 'rnaedna',
+    loadChildren: () => import('./matbio/rnaedna/rnaedna.module').then( m => m.RnaednaPageModule)
+  },
+  {
+    path: 'icp',
+    loadChildren: () => import('./matbio/icp/icp.module').then( m => m.IcpPageModule)
+  },
+  {
+    path: 'pp',
+    loadChildren: () => import('./matesp/pp/pp.module').then( m => m.PpPageModule)
+  },
+  {
+    path: 'pp',
+    loadChildren: () => import('./matesp/pp/pp.module').then( m => m.PpPageModule)
+  },
 ];
 @NgModule({
   imports: [

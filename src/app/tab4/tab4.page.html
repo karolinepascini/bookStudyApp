@@ -1,15 +1,54 @@
 <ion-header>
+  <ion-app slot="start">
+    <ion-menu contentId="main-content">
+      <ion-header>
+        <ion-toolbar color="subcor">
+          <ion-searchbar class="pesq" animated="true" placeholder="Animated"></ion-searchbar>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">This is the menu content.</ion-content>
+    </ion-menu>
+    <div class="ion-page" id="main-content">
+      <ion-header>
+        <ion-toolbar color="fundo">
+          <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+          <ion-title></ion-title>
+        </ion-toolbar>
+      </ion-header>
+    </div>
+  </ion-app>
   <ion-item color="principal" class="titulo">
     <ion-thumbnail class="imagem" slot="start">
-      <img src="../../assets/MicrosoftTeams-image.png" />
+      <ion-icon class="icon" name="call-outline"></ion-icon>
     </ion-thumbnail>
-    <div>
-      <ion-label class="app">Book'Study </ion-label>
-      <ion-label class="subtitulo">Meu aplicativo de estudos!</ion-label>
-    </div>
+    <p class="subtitulo">Book'Chat</p>
+    <ion-icon name="camera-outline " slot="end"></ion-icon>
   </ion-item>
 </ion-header>
 
-<ion-content>
+<ion-content color="fundo">
+  <ion-searchbar></ion-searchbar>
+  <br>
+  <div>
+    <ion-segment value="chats" (ionchange) ="segmentChange($event)">
+      <ion-segment-button value="chats">
+        <ion-label color="principal">Conversas</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="calls">
+        <ion-label color="principal">Chamadas</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+  <br>
+
+
+
+
+
+
+
 
 </ion-content>

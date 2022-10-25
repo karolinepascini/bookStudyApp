@@ -1,6 +1,10 @@
-
-
-
+.tiagao{
+  font-style: italic;
+  font-size: 25px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-left: 60px;
+  margin-top: 35px;
+}
 .titulo {
   color: #790505;
   text-align: center;
@@ -26,16 +30,18 @@
   margin-right: 20px;
   margin-top: 20px;
 }
-.desem{
+.sel{
   color: #d9d9d9;
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .penho{
   color: #ffffff;
   border-radius: 10px;
   border-color: #ffffff;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .color{
   --ion-item-background: #790505;

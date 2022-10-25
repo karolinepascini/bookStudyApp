@@ -4,18 +4,68 @@
       <img src="../../assets/MicrosoftTeams-image.png" />
     </ion-thumbnail>
     <div>
-      <ion-label class="app">Book'Study </ion-label>
-      <ion-label class="subtitulo">Meu aplicativo de estudos!</ion-label>
+      <ion-label class="subtitulo">Meu Cronograma</ion-label>
     </div>
   </ion-item>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content color="fundo" [fullscreen]="true">
+ <ion-grid>
+    <ion-row>
+      <ion-col >
+        <div>
+         <img class="img" src="../../assets/esquilolivro.png"/>
+      </div>
+      </ion-col>
+      <ion-col >
+        <p class="comeca">Bora Começar Karol?</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-card class="grid">
+      <ion-row>
+        <ion-col>
+         <p class="doidoi">Terça</p>
+         <p class="matmat">Quimica</p>
+         <p class="matmat">Fisica</p>
+         <p class="matmat">Sociologia</p>
+        </ion-col>
+        <ion-col>
+          <p class="doidoi">Quarta</p>
+          <p class="matmat">Inglês</p>
+          <p class="matmat">Espanhol</p>
+          <p class="matmat">Biologia</p>
+        </ion-col>
+        <ion-col>
+          <p class="doidoi" >Sexta</p>
+          <p class="matmat">Geografia</p>
+          <p class="matmat">Matematica</p>
+          <p class="matmat">Filosofia</p>
+        </ion-col>
+        <ion-col>
+          <p class="doidoi">Domingo</p>
+          <p class="matmat">Historia</p>
+          <p class="matmat">Português</p>
+          <p class="matmat">Fisíca</p>
+        </ion-col>
+      </ion-row>
+  </ion-card>
+  <ion-grid>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  </ion-grid>
+
+  <ion-card color="principal" class="div" >
+    <div class="hora">
+      <p >3 Horas de Estudos</p>
+      <p >Cada Materia: 1 Hora</p>
+      <p >Intervalos de 15 minutos por Materia.</p>
+    </div>
+
+  </ion-card>
+  <br>
+  <div class="comcom" >
+  <ion-button class="comcom" color="principal" expand="block">Começar</ion-button>
+</div>
+
+
 </ion-content>

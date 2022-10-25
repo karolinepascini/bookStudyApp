@@ -6,8 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tab4.page.scss'],
 })
 export class Tab4Page implements OnInit {
-
+  activeTab: string = "chats"
   constructor() { }
+
+  segmentChange(e){
+    this.activeTab = e.target.value;
+  }
 
   ngOnInit() {
   }

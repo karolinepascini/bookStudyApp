@@ -1,14 +1,37 @@
 <ion-header  [translucent]="true">
   <ion-item color="principal" class="titulo">
     <ion-thumbnail class="imagem" slot="start">
-      <img class="img" src="../../assets/MicrosoftTeams-image.png" />
+      <ion-icon class="icon" name="school-outline"></ion-icon>
       </ion-thumbnail>
-      <p>Conteúdos:</p>
+      <p class="subtitulo">Calendário e Metas</p>
     </ion-item>
 </ion-header>
 
 <ion-content color="fundo" [fullscreen]="true">
+  <div class="calen">
+  <ion-datetime color="principal"></ion-datetime>
+</div>
 
-  <ion-datetime class="calendar"></ion-datetime>
+  <div class="metas">
+    <p class="check">Checklist de metas:</p>
+
+      <ion-text >
+        <ion-item color="#d9d9d9">
+        <ion-checkbox slot="start" [indeterminate]="true" color="principal"></ion-checkbox>
+        <ion-label>Exercícios cumpridos. </ion-label>
+      </ion-item>
+      <ion-item color="#d9d9d9">
+        <ion-checkbox slot="start" [indeterminate]="true" color="principal"></ion-checkbox>
+        <ion-label>Redação da semana/mês. </ion-label>
+      </ion-item>
+      <ion-item color="#d9d9d9">
+        <ion-checkbox slot="start" [indeterminate]="true" color="principal"></ion-checkbox>
+        <ion-label>Horario de estudo. </ion-label>
+      </ion-item>
+    </ion-text>
+
+    <ion-button color="principal"  class="botao" expand="block"> Confirmar.</ion-button>
+
+  </div>
 
 </ion-content>

@@ -12,18 +12,24 @@
 <ion-content [fullscreen]="true" color="fundo">
   <ion-card color="principal" class="div" >
     <div>
-      <p class="desem">Desempenho Geral:</p>
+      <p class="sel">Selecionar estudos</p>
       <ion-row>
-        <ion-col>
-        </ion-col>
-
         <ion-col class="color">
-          <ion-list >
-            <ion-item >
-              <ion-select class="penho" placeholder="Selecionar desempenho">
-                <ion-select-option value="apples">Apples</ion-select-option>
-                <ion-select-option value="oranges">Oranges</ion-select-option>
-                <ion-select-option value="bananas">Bananas</ion-select-option>
+          <ion-list>
+            <ion-item class="penho">
+              <ion-select placeholder="Quais materias vou estudar hoje" [multiple]="true">
+                <ion-select-option value="biologia">Biologia</ion-select-option>
+                <ion-select-option value="espanhol">Espanhol</ion-select-option>
+                <ion-select-option value="filosofia">Filosofia</ion-select-option>
+                <ion-select-option value="fisica">Física</ion-select-option>
+                <ion-select-option value="geografia">Geografia</ion-select-option>
+                <ion-select-option value="historia">História</ion-select-option>
+                <ion-select-option value="ingles">Inglês</ion-select-option>
+                <ion-select-option value="lp">Língua Portuguesa</ion-select-option>
+                <ion-select-option value="matematica">Matemática</ion-select-option>
+                <ion-select-option value="quimica">Química</ion-select-option>
+                <ion-select-option value="redacao">Redação</ion-select-option>
+                <ion-select-option value="socio">Sociologia</ion-select-option>
               </ion-select>
             </ion-item>
           </ion-list>
@@ -81,7 +87,7 @@
     <ion-row>
       <ion-col class="ing" routerLink="/ing">
         <div>
-          <p class="mater"> Inglês</p>
+          <p class="tiagao"> Inglês</p>
         </div>
       </ion-col>
       <ion-col class="port" routerLink="/port">

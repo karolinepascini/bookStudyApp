@@ -1,15 +1,51 @@
-<ion-header>
-  <ion-item color="principal" class="titulo">
-    <ion-thumbnail class="imagem" slot="start">
-      <img src="../../assets/MicrosoftTeams-image.png" />
-    </ion-thumbnail>
-    <div>
-      <ion-label class="app">Book'Study </ion-label>
-      <ion-label class="subtitulo">Meu aplicativo de estudos!</ion-label>
+<ion-header >
+  <ion-item color="principal" class="perfil">
+    <div class="perfil">
+
     </div>
   </ion-item>
 </ion-header>
 
-<ion-content>
+<ion-content color="fundo" [fullscreen]="true">
+  <ion-item color="fundo"  lines="none">
+    <ion-avatar slot="start" class="pessoinha">
+      <img  alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      <ion-icon name="camera-outline"></ion-icon>
+    </ion-avatar>
+  </ion-item>
+
+  <p class="nominho">Karoline Pascine</p>
+  <ion-card color="principal" class="div" >
+    <div>
+      <ion-progress-bar type="indeterminate" color="danger"></ion-progress-bar>
+      <p class="sel">Selecionar Desempenho</p>
+      <ion-row>
+        <ion-col>
+        </ion-col>
+
+        <ion-col class="color">
+          <ion-list >
+            <ion-item >
+              <ion-select class="penho" placeholder="Selecionar desempenho">
+                <ion-select-option value="bio">Biologia</ion-select-option>
+                <ion-select-option value="esp">Espanhol</ion-select-option>
+                <ion-select-option value="filo">Filosofia</ion-select-option>
+                <ion-select-option value="física">Física</ion-select-option>
+                <ion-select-option value="geo">Geografia</ion-select-option>
+                <ion-select-option value="hist">História</ion-select-option>
+                <ion-select-option value="ing">Inglês</ion-select-option>
+                <ion-select-option value="lp">Língua Portuguesa</ion-select-option>
+                <ion-select-option value="mat">Matemática</ion-select-option>
+                <ion-select-option value="quim">Química</ion-select-option>
+                <ion-select-option value="red">Redação</ion-select-option>
+                <ion-select-option value="socio">Sociologia</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+    </div>
+     <ion-progress-bar type="indeterminate" color="danger" class="baixinho"></ion-progress-bar>
+  </ion-card>
 
 </ion-content>

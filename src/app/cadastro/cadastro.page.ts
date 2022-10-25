@@ -1,5 +1,7 @@
 import { AlertController } from '@ionic/angular';
 import { Component, OnInit } from '@angular/core';
+import { ToastController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cadastro',
@@ -8,7 +10,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastroPage implements OnInit {
 
-  constructor(private alertController: AlertController) {}
+  email: string;
+  senha: string;
+
+  constructor(private alertController: AlertController, public toastController: ToastController, private router: Router) {}
 
   async presentAlert() {
     const alert = await this.alertController.create({
@@ -22,4 +27,21 @@ export class CadastroPage implements OnInit {
   ngOnInit() {
   }
 
+  login(){
+    if(this.email === 'karoline@gmail.com' && this.senha === '1230'){
+      this.router.navigateByUrl('/tabs/tab1');
+      this.presentAlert();
+    }else{
+      this.presentToast('Email ou Senha inválida','danger');
+    }
+  }
+
+  async presentToast( texto: string, cor: string){
+    const toast = await this.toastController.create({
+      message:texto,
+      color:cor,
+      duration: 2000
+    });
+    toast.present();
+  }
 }
