@@ -101,7 +101,19 @@ const routes: Routes = [
   {
     path: 'pp',
     loadChildren: () => import('./matesp/pp/pp.module').then( m => m.PpPageModule)
+  },  {
+    path: 'pp',
+    loadChildren: () => import('./matesp/pp/pp.module').then( m => m.PpPageModule)
   },
+  {
+    path: 'fa',
+    loadChildren: () => import('./matesp/fa/fa.module').then( m => m.FaPageModule)
+  },
+  {
+    path: 'mm',
+    loadChildren: () => import('./matesp/mm/mm.module').then( m => m.MmPageModule)
+  },
+
 ];
 @NgModule({
   imports: [
