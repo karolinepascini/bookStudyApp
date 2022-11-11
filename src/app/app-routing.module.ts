@@ -36,51 +36,51 @@ const routes: Routes = [
   },
   {
     path: 'bio',
-    loadChildren: () => import('./bio/bio.module').then( m => m.BioPageModule)
+    loadChildren: () => import('./materia/bio/bio.module').then( m => m.BioPageModule)
   },
   {
     path: 'esp',
-    loadChildren: () => import('./esp/esp.module').then( m => m.EspPageModule)
+    loadChildren: () => import('./materia/esp/esp.module').then( m => m.EspPageModule)
   },
   {
     path: 'filo',
-    loadChildren: () => import('./filo/filo.module').then( m => m.FiloPageModule)
+    loadChildren: () => import('./materia/filo/filo.module').then( m => m.FiloPageModule)
   },
   {
     path: 'fis',
-    loadChildren: () => import('./fis/fis.module').then( m => m.FisPageModule)
+    loadChildren: () => import('./materia/fis/fis.module').then( m => m.FisPageModule)
   },
   {
     path: 'geo',
-    loadChildren: () => import('./geo/geo.module').then( m => m.GeoPageModule)
+    loadChildren: () => import('./materia/geo/geo.module').then( m => m.GeoPageModule)
   },
   {
     path: 'his',
-    loadChildren: () => import('./his/his.module').then( m => m.HisPageModule)
+    loadChildren: () => import('./materia/his/his.module').then( m => m.HisPageModule)
   },
   {
     path: 'ing',
-    loadChildren: () => import('./ing/ing.module').then( m => m.IngPageModule)
+    loadChildren: () => import('./materia/ing/ing.module').then( m => m.IngPageModule)
   },
   {
     path: 'port',
-    loadChildren: () => import('./port/port.module').then( m => m.PortPageModule)
+    loadChildren: () => import('./materia/port/port.module').then( m => m.PortPageModule)
   },
   {
     path: 'mat',
-    loadChildren: () => import('./mat/mat.module').then( m => m.MatPageModule)
+    loadChildren: () => import('./materia/mat/mat.module').then( m => m.MatPageModule)
   },
   {
     path: 'quim',
-    loadChildren: () => import('./quim/quim.module').then( m => m.QuimPageModule)
+    loadChildren: () => import('./materia/quim/quim.module').then( m => m.QuimPageModule)
   },
   {
     path: 'red',
-    loadChildren: () => import('./red/red.module').then( m => m.RedPageModule)
+    loadChildren: () => import('./materia/red/red.module').then( m => m.RedPageModule)
   },
   {
     path: 'socio',
-    loadChildren: () => import('./socio/socio.module').then( m => m.SocioPageModule)
+    loadChildren: () => import('./materia/socio/socio.module').then( m => m.SocioPageModule)
   },
   {
     path: 'imuno',
@@ -101,7 +101,8 @@ const routes: Routes = [
   {
     path: 'pp',
     loadChildren: () => import('./matesp/pp/pp.module').then( m => m.PpPageModule)
-  },  {
+  },
+  {
     path: 'pp',
     loadChildren: () => import('./matesp/pp/pp.module').then( m => m.PpPageModule)
   },
@@ -112,7 +113,11 @@ const routes: Routes = [
   {
     path: 'mm',
     loadChildren: () => import('./matesp/mm/mm.module').then( m => m.MmPageModule)
+  },  {
+    path: 'tip',
+    loadChildren: () => import('./matbio/tip/tip.module').then( m => m.TipPageModule)
   },
+
 
 ];
 @NgModule({

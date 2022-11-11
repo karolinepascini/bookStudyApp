@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { RnaednaPage } from './rnaedna.page';
-import { BioPage } from '../../bio/bio.page';
+import { BioPage } from '../../materia/bio/bio.page';
+import { TipPage } from '../tip/tip.page';
 
 const routes: Routes = [
   {
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path: 'bio',
     component: BioPage
+  },
+  {
+    path: 'tip',
+    component: TipPage
   }
 ];
 

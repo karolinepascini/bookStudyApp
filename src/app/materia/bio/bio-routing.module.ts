@@ -1,10 +1,9 @@
-import { ImunoPage } from './../matbio/imuno/imuno.page';
-import { IcpPage } from './../matbio/icp/icp.page';
-import { RnaednaPage } from './../matbio/rnaedna/rnaedna.page';
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { BioPage } from './bio.page';
+import { IcpPage } from '../../matbio/icp/icp.page';
+import { RnaednaPage } from '../../matbio/rnaedna/rnaedna.page';
 
 const routes: Routes = [
   {
@@ -12,16 +11,15 @@ const routes: Routes = [
     component: BioPage
   },
   {
-    path: 'rnaedna',
-    component: RnaednaPage
-  },
-  {
     path: 'icp',
     component: IcpPage
   },
   {
-    path: 'imuno',
-    component: ImunoPage
+    path: 'rnaedna',
+    component: RnaednaPage
+  },
+  {
+    path: ''
   }
 ];
 
