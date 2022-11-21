@@ -1,15 +1,19 @@
-<ion-header [translucent]="true">
-  <div class="titulo" >
-      <ion-avatar slot="start" class="pessoinha">
-        <img  alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
-      </ion-avatar>
-</div>
-</ion-header>
+
+
 <ion-content color="fundo" [fullscreen]="true">
 
+  <div class="header"></div>
+
+    <div class="user">
+    <img src="https://ionicframework.com/docs/img/demos/avatar.svg" class="profile"/>
+    </div>
 
 
-  <p class="nominho">Karoline Pascine</p>
+    <div class="verified-icon"></div>
+
+
+
+  <p class="name">Karoline Pascine</p>
   <ion-card color="principal" class="div" >
     <div>
       <ion-progress-bar type="indeterminate" color="danger"></ion-progress-bar>
@@ -42,6 +46,20 @@
     </div>
      <ion-progress-bar type="indeterminate" color="danger" class="baixinho"></ion-progress-bar>
   </ion-card>
+
+  <div class="ion-no-padding">
+    <p class="section-title">Metas</p>
+    <ion-slides class="slides" [options]="slideOpts">
+      <ion-slide class="historia-preview">
+
+        <div>
+          <ion-card class="materia"></ion-card>
+      </div>
+
+      </ion-slide>
+    </ion-slides>
+  </div>
+
 
 
 
