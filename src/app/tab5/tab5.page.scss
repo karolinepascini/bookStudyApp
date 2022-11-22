@@ -20,11 +20,13 @@
 }
 
 .div{
-  height: 230px;
+  height: 300px;
   width: 340px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
+  /* margin-top: 20px; */
+  position: inherit;
+  z-index: 1;
 }
 .color{
   --ion-item-background: #790505;
@@ -82,11 +84,10 @@ img{
 
 
 .name{
-  color: #fff;
-  font-family: "Poppins";
   font-size: 1.5rem;
   margin-left: 10vh;
-  margin-top: -10vh;
+  margin-top: -5vh;
+  font-weight: 600;
 }
 
 .header{
@@ -95,8 +96,152 @@ img{
   background-color: #790505;
 }
 
+.penho{
+  color: #fff;
+  margin-left: 11vh;
+  margin-top: -35px;
+}
+
+.progress{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transform: rotate(270deg);
+  svg{
+    position: relative;
+    margin-top: 15vh;
+    margin-left: -10vh;
+    circle{
+      width: 100%;
+      height: 100%;
+      fill: transparent;
+      stroke-width: 2;
+      stroke: #191919;
+      margin-left: 6vh;
+      transform: translate(16vh, 10px);
+      z-index: 3;
+      position: relative;
+      }
+    circle:nth-child(2){
+      stroke: #04fc43;
+      stroke-dasharray: 440;
+      stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+    }
+    }
+  }
+
+  .dot{
+    position: absolute;
+    inset: 5px;
+    z-index: 10;
+  }
+
+  .dot::before{
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translate(10px, 10px);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #04fc43;
+    box-shadow: 0 0 10px #04fc43, 0 0 30px #04fc43;
+    z-index: 15;
+    margin-left: 2vh;
+    margin-top: 14.4vh;
+
+  }
+
+  .number{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: rotate(90deg);
+    margin-top: 26vh;
+    margin-left: 10vh;
+
+    h2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-weight: 700;
+      font-size: 2.5rem;
+    }
+    span{
+      font-weight: 300;
+      color: #fff;
+      font-size: 0.5rem;
+    }
+    p{
+      font-weight: 300;
+      font-size: 0.75rem;
+      line-height: 2px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.75);
+      margin-top: -5px;
+      letter-spacing: 2px;
+    }
+  }
+
+.materia{
+  width: 170px;
+  height: 130px;
+}
+
+.subtitle{
+  color: #8d8d8d;
+  font-size: 0.75rem;
+  margin-top: 0.1vh;
+  text-transform: uppercase;
+  margin-left: -95px;
+  font-family: "Poppins";
+}
+
+.title{
+  color: #191919;
+  font-weight: 800;
+  font-family: "Poppins";
+  margin-left: -50px;
+  margin-top: -5px;
+  font-size: 1.7rem;
+}
+
+.title2{
+  color: #191919;
+  font-weight: 800;
+  font-family: "Poppins";
+  margin-left: -10px;
+  margin-top: -5px;
+  font-size: 1.7rem;
+}
 
 
+.destaque{
+  color: #000;
+  font-weight: bold;
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  margin-left: 95px;
+}
 
+.descricao{
+  color: rgba(0, 0, 0, 0.74);
+  font-weight: 600;
+  font-family: 'Poppins';
+  font-size: 0.8rem;
+  margin-top: -1px;
+  /* text-transform: uppercase; */
+  /* margin-left: 95px; */
+}
 
-
+.title3{
+  font-family: 'Poppins';
+    margin-left: 15px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}

@@ -14,10 +14,10 @@ export class Tab5Page implements OnInit {
   }
 
   public slideOpts = {
-    slidesPerView: 1.5,
-    spaceBetween: 50,
+    slidesPerView: 1.7,
+    spaceBetween: 20,
     centeredSlides: true,
-    initialSlide: 5,
+    initialSlide: 1,
     coverflowEffect: {
       rotate: 0,
       stretch: 0,

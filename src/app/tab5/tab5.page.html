@@ -16,44 +16,83 @@
   <p class="name">Karoline Pascine</p>
   <ion-card color="principal" class="div" >
     <div>
-      <ion-progress-bar type="indeterminate" color="danger"></ion-progress-bar>
       <p class="sel">Selecionar Desempenho</p>
       <ion-row>
         <ion-col>
         </ion-col>
-
-        <ion-col class="color">
-          <ion-list >
-            <ion-item >
-              <ion-select class="penho" placeholder="Selecionar desempenho">
-                <ion-select-option value="bio" color="ffffff">Biologia</ion-select-option>
-                <ion-select-option value="esp">Espanhol</ion-select-option>
-                <ion-select-option value="filo">Filosofia</ion-select-option>
-                <ion-select-option value="física">Física</ion-select-option>
-                <ion-select-option value="geo">Geografia</ion-select-option>
-                <ion-select-option value="hist">História</ion-select-option>
-                <ion-select-option value="ing">Inglês</ion-select-option>
-                <ion-select-option value="lp">Língua Portuguesa</ion-select-option>
-                <ion-select-option value="mat">Matemática</ion-select-option>
-                <ion-select-option value="quim">Química</ion-select-option>
-                <ion-select-option value="red">Redação</ion-select-option>
-                <ion-select-option value="socio">Sociologia</ion-select-option>
-              </ion-select>
-            </ion-item>
-          </ion-list>
-        </ion-col>
       </ion-row>
+
+      <div class="progress" style="--clr: #04fc43; --num:65;">
+        <div class="dot"></div>
+        <svg>
+          <circle cx="60" cy="60" r="60"></circle>
+          <circle cx="60" cy="60" r="60"></circle>
+        </svg>
+        <div class="number">
+          <h2>65<span>%</span></h2>
+          <p>Geral</p>
+        </div>
+      </div>
+
+      <ion-col class="color">
+        <ion-list >
+          <ion-item >
+            <ion-select class="penho" placeholder="Selecionar matéria">
+              <ion-select-option value="bio" color="ffffff">Biologia</ion-select-option>
+              <ion-select-option value="esp">Espanhol</ion-select-option>
+              <ion-select-option value="filo">Filosofia</ion-select-option>
+              <ion-select-option value="física">Física</ion-select-option>
+              <ion-select-option value="geo">Geografia</ion-select-option>
+              <ion-select-option value="hist">História</ion-select-option>
+              <ion-select-option value="ing">Inglês</ion-select-option>
+              <ion-select-option value="lp">Língua Portuguesa</ion-select-option>
+              <ion-select-option value="mat">Matemática</ion-select-option>
+              <ion-select-option value="quim">Química</ion-select-option>
+              <ion-select-option value="red">Redação</ion-select-option>
+              <ion-select-option value="socio">Sociologia</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+      </ion-col>
     </div>
      <ion-progress-bar type="indeterminate" color="danger" class="baixinho"></ion-progress-bar>
   </ion-card>
 
   <div class="ion-no-padding">
-    <p class="section-title">Metas</p>
+    <p class="title3">Metas</p>
     <ion-slides class="slides" [options]="slideOpts">
-      <ion-slide class="historia-preview">
+      <ion-slide class="metas">
 
         <div>
-          <ion-card class="materia"></ion-card>
+          <ion-card class="materia">
+            <h3 class="subtitle">Biologia</h3>
+            <h2 class="title">Quack!</h2>
+            <b class="destaque">9/9</b><p class="descricao">exercícios completos</p>
+          </ion-card>
+      </div>
+
+      </ion-slide>
+
+      <ion-slide class="metas">
+
+        <div>
+          <ion-card class="materia">
+            <h3 class="subtitle">Literatura</h3>
+            <h2 class="title2">O Lenhador</h2>
+            <b class="destaque">6/9</b><p class="descricao">exercícios completos</p>
+          </ion-card>
+      </div>
+
+      </ion-slide>
+
+      <ion-slide class="metas">
+
+        <div>
+          <ion-card class="materia">
+            <h3 class="subtitle">Química</h3>
+            <h2 class="title2">Benzeno</h2>
+            <b class="destaque">7/9</b><p class="descricao">exercícios completos</p>
+          </ion-card>
       </div>
 
       </ion-slide>
