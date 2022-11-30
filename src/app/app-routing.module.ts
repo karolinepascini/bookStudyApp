@@ -117,6 +117,26 @@ const routes: Routes = [
     path: 'tip',
     loadChildren: () => import('./matbio/tip/tip.module').then( m => m.TipPageModule)
   },
+  {
+    path: 'compl',
+    loadChildren: () => import('./matred/compl/compl.module').then( m => m.ComplPageModule)
+  },
+  {
+    path: 'compll',
+    loadChildren: () => import('./matred/compll/compll.module').then( m => m.CompllPageModule)
+  },
+  {
+    path: 'complll',
+    loadChildren: () => import('./matred/complll/complll.module').then( m => m.ComplllPageModule)
+  },
+  {
+    path: 'complv',
+    loadChildren: () => import('./matred/complv/complv.module').then( m => m.ComplvPageModule)
+  },
+  {
+    path: 'compv',
+    loadChildren: () => import('./matred/compv/compv.module').then( m => m.CompvPageModule)
+  },
 
 
 ];
