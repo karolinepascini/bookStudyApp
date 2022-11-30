@@ -10,9 +10,6 @@ import { Router } from '@angular/router';
 })
 export class CadastroPage implements OnInit {
 
-  email: string;
-  senha: string;
-
   constructor(private alertController: AlertController, public toastController: ToastController, private router: Router) {}
 
   async presentAlert() {
@@ -25,15 +22,6 @@ export class CadastroPage implements OnInit {
     await alert.present();
   }
   ngOnInit() {
-  }
-
-  login(){
-    if(this.email === 'karoline@gmail.com' && this.senha === '1230'){
-      this.router.navigateByUrl('/tabs/tab1');
-      this.presentAlert();
-    }else{
-      this.presentToast('Email ou Senha inválida','danger');
-    }
   }
 
   async presentToast( texto: string, cor: string){
