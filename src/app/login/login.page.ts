@@ -13,12 +13,13 @@ export class LoginPage implements OnInit {
 
   constructor(private alertController: AlertController, formBouilder: FormBuilder) {
     this.formLogin = this.formBuilder.group({
-      email: [''],
+      email: ['', Validators.compose([Validators.required, Validators.email])],
       nome:['', Validators.compose([Validators.required, Validators.minLength(4)])],
       sobrenome:['', Validators.compose([Validators.required, Validators.minLength(3)])],
-      senha:[''],
-      confirmaSenha:[''],
-      telefone:['',Validators.compose([Validators.required])],
+      senha:['', Validators.compose([Validators.required, Validators.minLength(6), Validators.maxLebght(8)])],
+      confirmaSenha:['', Validators.compose([Validators.required, Validators.minLength(6), Validators.maxLebght(8)])
+    ],
+      fone:['',Validators.compose([Validators.required])],
     });
    }
 
@@ -35,4 +36,8 @@ export class LoginPage implements OnInit {
   }
 
   ngOnInit() {}
+}
+
+salvarLogin(){
+  console.log('Formulário:', this.formLogin.valid);
 }
