@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController } from '@ionic/angular';
+import { FormBuilder, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -8,7 +9,18 @@ import { AlertController } from '@ionic/angular';
 })
 export class LoginPage implements OnInit {
 
-  constructor(private alertController: AlertController) { }
+  formLogin: FormGroup;
+
+  constructor(private alertController: AlertController, formBouilder: FormBuilder) {
+    this.formLogin = this.formBuilder.group({
+      email: [''],
+      nome:['', Validators.compose([Validators.required, Validators.minLength(4)])],
+      sobrenome:['', Validators.compose([Validators.required, Validators.minLength(3)])],
+      senha:[''],
+      confirmaSenha:[''],
+      telefone:['',Validators.compose([Validators.required])],
+    });
+   }
 
   async presentAlert() {
     const alert = await this.alertController.create({
@@ -19,6 +31,7 @@ export class LoginPage implements OnInit {
     });
 
     await alert.present();
+
   }
 
   ngOnInit() {}
