@@ -9,14 +9,6 @@ const routes: Routes = [
   {
     path: '',
     component: RnaednaPage
-  },
-  {
-    path: 'bio',
-    component: BioPage
-  },
-  {
-    path: 'tip',
-    component: TipPage
   }
 ];
 

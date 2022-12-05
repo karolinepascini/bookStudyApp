@@ -10,23 +10,7 @@ const routes: Routes = [
   {
     path: '',
     component: CadastroPage
-  },
-  {
-    path:'tab1',
-    component: Tab1Page
-  },
-  {
-    path:'tabs',
-    component: TabsPage
-  },
-  {
-    path:'login',
-    component: CadastroPage
-  },
-  {
-    path:'esqueciasenha',
-    component: EsquecisenhaPage
-  },
+  }
 ];
 
 @NgModule({
