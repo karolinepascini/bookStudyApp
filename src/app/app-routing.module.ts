@@ -35,47 +35,47 @@ const routes: Routes = [
       import('./login/login.module').then((m) => m.LoginPageModule),
   },
   {
-    path: 'bio',
+    path: 'biologia',
     loadChildren: () => import('./materia/bio/bio.module').then( m => m.BioPageModule)
   },
   {
-    path: 'esp',
+    path: 'espanhol',
     loadChildren: () => import('./materia/esp/esp.module').then( m => m.EspPageModule)
   },
   {
-    path: 'filo',
+    path: 'filosofia',
     loadChildren: () => import('./materia/filo/filo.module').then( m => m.FiloPageModule)
   },
   {
-    path: 'fis',
+    path: 'fisica',
     loadChildren: () => import('./materia/fis/fis.module').then( m => m.FisPageModule)
   },
   {
-    path: 'geo',
+    path: 'geografia',
     loadChildren: () => import('./materia/geo/geo.module').then( m => m.GeoPageModule)
   },
   {
-    path: 'his',
+    path: 'historia',
     loadChildren: () => import('./materia/his/his.module').then( m => m.HisPageModule)
   },
   {
-    path: 'ing',
+    path: 'ingles',
     loadChildren: () => import('./materia/ing/ing.module').then( m => m.IngPageModule)
   },
   {
-    path: 'port',
+    path: 'lp',
     loadChildren: () => import('./materia/port/port.module').then( m => m.PortPageModule)
   },
   {
-    path: 'mat',
+    path: 'matematica',
     loadChildren: () => import('./materia/mat/mat.module').then( m => m.MatPageModule)
   },
   {
-    path: 'quim',
+    path: 'quimica',
     loadChildren: () => import('./materia/quim/quim.module').then( m => m.QuimPageModule)
   },
   {
-    path: 'red',
+    path: 'redacao',
     loadChildren: () => import('./materia/red/red.module').then( m => m.RedPageModule)
   },
   {
@@ -113,7 +113,8 @@ const routes: Routes = [
   {
     path: 'mm',
     loadChildren: () => import('./matesp/mm/mm.module').then( m => m.MmPageModule)
-  },  {
+  },
+  {
     path: 'tip',
     loadChildren: () => import('./matbio/tip/tip.module').then( m => m.TipPageModule)
   },

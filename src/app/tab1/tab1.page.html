@@ -10,25 +10,26 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" color="fundo">
-  <ion-card color="principal" class="div" >
+  <ion-card color="principal" class="div">
     <div>
       <p class="sel">Selecionar estudos</p>
       <ion-row>
         <ion-col class="color">
           <ion-list>
             <ion-item class="penho">
-              <ion-select ngModel="" placeholder="Quais materias vou estudar hoje" [multiple]="true">
+              <ion-select [(ngModel)]="materia" placeholder="Quais materias vou estudar hoje" [multiple]="true"
+                (ionChange)="proc()">
                 <ion-select-option value="biologia">Biologia</ion-select-option>
                 <ion-select-option value="espanhol">Espanhol</ion-select-option>
                 <ion-select-option value="filosofia">Filosofia</ion-select-option>
                 <ion-select-option value="fisica">Física</ion-select-option>
                 <ion-select-option value="geografia">Geografia</ion-select-option>
                 <ion-select-option value="historia">História</ion-select-option>
-                <ion-select-option value="ingles">Inglês</ion-select-option>
+                <ion-select-option value="inglês">Inglês</ion-select-option>
                 <ion-select-option value="lp">Língua Portuguesa</ion-select-option>
                 <ion-select-option value="matematica">Matemática</ion-select-option>
                 <ion-select-option value="quimica">Química</ion-select-option>
-                <ion-select-option value="redacao">Redação</ion-select-option>
+                <ion-select-option value="redação">Redação</ion-select-option>
                 <ion-select-option value="socio">Sociologia</ion-select-option>
               </ion-select>
             </ion-item>
@@ -38,94 +39,108 @@
     </div>
   </ion-card>
 
-  <ion-grid>
-    <ion-row >
-      <ion-col class="bio" routerLink="/bio">
-        <div>
-          <p class="mater">Biologia</p>
-      </div>
-      </ion-col>
-      <ion-col class="esp" routerLink="/esp">
-        <div>
-          <p class="mater">Espanhol</p>
-        </div>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+  <div id="all" class="add">
+    <ion-grid>
+      <ion-row>
+        <ion-col class="bio" routerLink="/biologia">
+          <div>
+            <p class="mater">Biologia</p>
+          </div>
+        </ion-col>
+        <ion-col class="esp" routerLink="/espanhol">
+          <div>
+            <p class="mater">Espanhol</p>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
 
-  <ion-grid>
-    <ion-row>
-      <ion-col class="filo" routerLink="/filo">
-        <div>
-          <p class="mater">Filosofia</p>
-      </div>
-      </ion-col>
-      <ion-col class="fis" routerLink="/fis">
-        <div>
-          <p class="mater">Física</p>
-        </div>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col class="filo" routerLink="/filosofia">
+          <div>
+            <p class="mater">Filosofia</p>
+          </div>
+        </ion-col>
+        <ion-col class="fis" routerLink="/fisica">
+          <div>
+            <p class="mater">Física</p>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
 
-  <ion-grid>
-    <ion-row>
-      <ion-col class="geo" routerLink="/geo">
-        <div>
-          <p class="mater">Geografia</p>
-        </div>
-      </ion-col>
-      <ion-col class="his" routerLink="/his">
-        <div>
-          <p class="mater">História</p>
-        </div>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col class="geo" routerLink="/geografia">
+          <div>
+            <p class="mater">Geografia</p>
+          </div>
+        </ion-col>
+        <ion-col class="his" routerLink="/historia">
+          <div>
+            <p class="mater">História</p>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
 
-  <ion-grid>
-    <ion-row>
-      <ion-col class="ing" routerLink="/ing">
-        <div>
-          <p class="tiagao"> Inglês</p>
-        </div>
-      </ion-col>
-      <ion-col class="port" routerLink="/port">
-        <div>
-          <p class="mater">Língua Portuguesa</p>
-        </div>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col class="ing" routerLink="/ingles">
+          <div>
+            <p class="tiagao"> Inglês</p>
+          </div>
+        </ion-col>
+        <ion-col class="port" routerLink="/lp">
+          <div>
+            <p class="mater">Língua Portuguesa</p>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
 
-  <ion-grid>
-    <ion-row>
-      <ion-col class="mat" routerLink="/mat">
-        <div>
-          <p class="mater">Matemática</p>
-        </div>
-      </ion-col>
-      <ion-col class="qui" routerLink="/quim">
-        <div>
-          <p class="mater">Química</p>
-        </div>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col class="mat" routerLink="/matematica">
+          <div>
+            <p class="mater">Matemática</p>
+          </div>
+        </ion-col>
+        <ion-col class="qui" routerLink="/quimica">
+          <div>
+            <p class="mater">Química</p>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
 
-  <ion-grid>
-    <ion-row>
-      <ion-col class="red" routerLink="/red">
-        <div>
-          <p class="mater">Redação</p>
-        </div>
-      </ion-col>
-      <ion-col class="socio" routerLink="/socio">
-        <div>
-          <p class="mater">Sociologia</p>
-        </div>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col class="red" routerLink="/redacao">
+          <div>
+            <p class="mater">Redação</p>
+          </div>
+        </ion-col>
+        <ion-col class="socio" routerLink="/socio">
+          <div>
+            <p class="mater">Sociologia</p>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div id="res" class="del">
+    <ion-grid>
+      <ion-row *ngFor="let r of escolha">
+        <ion-col class="red" [routerLink]="[r.link]">
+          <div>
+            <p class="mater">{{r.nome}}</p>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
 
 </ion-content>

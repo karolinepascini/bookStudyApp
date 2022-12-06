@@ -18,7 +18,7 @@
       </div>
       </ion-col>
       <ion-col >
-        <p class="comeca">Bora Começar Karoline?</p>
+        <p class="comeca">Bons Estudos, Karoline Pascini!</p>
       </ion-col>
     </ion-row>
   </ion-grid>
@@ -57,15 +57,46 @@
   <ion-card color="principal" class="div" >
     <div class="hora">
       <p >3 Horas de Estudos</p>
-      <p >Cada Materia: 1 Hora</p>
-      <p >Intervalos de 15 minutos por Materia.</p>
+      <p >Cada Materia: 50 minutos</p>
+      <p >Intervalos de 15 minutos por Materia</p>
+      <div>
+        <ion-row>
+        <ion-col>
+      <ion-button (click)="presentAlert()" class="comcom" color="principal" expand="block"><p class="comecar">Começar</p></ion-button>
+      </ion-col>
+      <ion-col>
+      <ion-button (click)="tempAlert()" class="comcom" color="principal" expand="block"><p class="comecar">Adiar Intervalo</p></ion-button>
+    </ion-col>
+  </ion-row>
     </div>
-
+  </div>
   </ion-card>
-  <br>
-  <div class="comcom" >
-  <ion-button class="comcom" color="principal" expand="block">Começar</ion-button>
-</div>
 
+<ion-card class="card">
+  <div>
+    <p class="sel">Escolha um tema para sua redação:</p>
+
+  <ion-list>
+    <ion-item class="selec" >
+      <ion-select interface="action-sheet" placeholder="Selecione">
+        <ion-select-option value="tema1">"Como garantir a liberdade de informação e evitar abusos nos meios de comunicação?"</ion-select-option>
+        <ion-select-option value="tema2">"Trabalho infantil na realidade brasileira"</ion-select-option>
+        <ion-select-option value="tema3">"O trabalho na construção da dignidade humana"</ion-select-option>
+        <ion-select-option value="tema4">"A persistência da violência contra a mulher na sociedade brasileira"</ion-select-option>
+        <ion-select-option value="tema5">"Os desafios para a valorização das comunidades e povos tradicionais do Brasil"</ion-select-option>
+        <ion-select-option value="tema6">"O indivíduo frente à ética nacional "</ion-select-option>
+        <ion-select-option value="tema7">"Viver em rede no século 21: os limites entre público e privado"</ion-select-option>
+        <ion-select-option value="tema8">"Caminhos para combater a intolerância religiosa no Brasil"</ion-select-option>
+        <ion-select-option value="tema9">"Desenvolvimento e preservação ambiental: como conciliar os interesses em conflitos?"</ion-select-option>
+        <ion-select-option value="tema10">"Efeitos da implantação da Lei Seca no Brasil "</ion-select-option>
+        <ion-select-option value="tema11">"O trabalho infantil na realidade brasileira"</ion-select-option>
+        <ion-select-option value="tema12">"O poder de transformação da leitura"</ion-select-option>
+        <ion-select-option value="tema13">Selecionar</ion-select-option>
+
+      </ion-select>
+    </ion-item>
+  </ion-list>
+</div>
+</ion-card>
 
 </ion-content>

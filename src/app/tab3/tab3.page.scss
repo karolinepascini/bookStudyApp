@@ -54,12 +54,14 @@
 }
 
 .hora{
-  margin-left: 15px;
+  margin-left: 25px;
+  margin-top: 25px;
   color: #af825b;
+  font-size: 16px;
 }
 
 .div{
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .ter{
@@ -67,5 +69,31 @@
 }
 
 .comcom{
-  margin-top: 50px;
+  margin-top: -10px;
+  display: flex;
+  position: relative;
+  flex-flow: row nowrap;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 2vh;
+  font-weight: 800;
+  height: 100%;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
+.comecar{
+  margin-left: -3vh;
+}
+.sel{
+  color: #d9d9d9;
+  text-align: center;
+  font-size: 25px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card{
+  height: 150px ;
+  margin-top: 40px;
 }
